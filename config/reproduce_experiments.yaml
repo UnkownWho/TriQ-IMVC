@@ -1,0 +1,240 @@
+experiments:
+  - dataset: handwritten
+    missing_rate: 0.3
+    seeds: [656, 657, 658, 659, 660]
+    boost:
+      avg_select: 0.9
+      refine_batch_size: 100
+      refine_finetune_epoch: 50
+      refine_topk: 10
+      selection_threshold: 0.75
+      selection_strategy: target_rate
+      target_selection_rate: 0.9
+      refine_learning_rate: 0.00003
+      sample_weight: 0
+      memory_max_capacity: null
+      w_vc: 0
+      w_cc: 0.5
+      w_rr: 0.5
+      early_stop_patience: 5
+      early_stop_delta: 0.001
+
+  - dataset: handwritten
+    missing_rate: 0.5
+    seeds: [875, 876, 877, 878, 879]
+    boost:
+      avg_select: 0.9
+      refine_batch_size: 100
+      refine_finetune_epoch: 50
+      refine_topk: 6
+      selection_threshold: 0.75
+      selection_strategy: target_rate
+      target_selection_rate: 0.9
+      refine_learning_rate: 0.00005
+      sample_weight: 0.75
+      memory_max_capacity: null
+      w_vc: 0.1
+      w_cc: 0.45
+      w_rr: 0.45
+      early_stop_patience: 5
+      early_stop_delta: 0.001
+
+  - dataset: handwritten
+    missing_rate: 0.67
+    seeds: [148, 149, 150, 151, 152]
+    boost:
+      avg_select: 0.7
+      refine_batch_size: 100
+      refine_finetune_epoch: 50
+      refine_topk: 10
+      selection_threshold: 0.75
+      selection_strategy: target_rate
+      target_selection_rate: 0.7
+      refine_learning_rate: 0.00005
+      sample_weight: 0
+      memory_max_capacity: null
+      w_vc: 0
+      w_cc: 0.5
+      w_rr: 0.5
+      early_stop_patience: 5
+      early_stop_delta: 0.001
+
+  - dataset: 100leaves
+    missing_rate: 0.3
+    seeds: [378, 379, 380, 381, 382]
+    boost:
+      avg_select: 0.6
+      refine_batch_size: 20
+      refine_finetune_epoch: 20
+      refine_topk: 3
+      selection_threshold: 0.66
+      selection_strategy: target_rate
+      target_selection_rate: 0.6
+      refine_learning_rate: 0.000005
+      sample_weight: 1
+      memory_max_capacity: null
+      w_vc: 0.2
+      w_cc: 0.4
+      w_rr: 0.4
+      early_stop_patience: 3
+      early_stop_delta: 0.0005
+
+  - dataset: 100leaves
+    missing_rate: 0.5
+    seeds: [392, 393, 394, 395, 396]
+    boost:
+      avg_select: 0.65
+      refine_batch_size: 20
+      refine_finetune_epoch: 22
+      refine_topk: 3
+      selection_threshold: 0.66
+      selection_strategy: target_rate
+      target_selection_rate: 0.65
+      refine_learning_rate: 0.000005
+      sample_weight: 2
+      memory_max_capacity: null
+      w_vc: 0.2
+      w_cc: 0.4
+      w_rr: 0.4
+      early_stop_patience: 3
+      early_stop_delta: 0.0005
+
+  - dataset: 100leaves
+    missing_rate: 0.67
+    seeds: [119, 120, 121, 122, 123]
+    boost:
+      avg_select: 0.65
+      refine_batch_size: 20
+      refine_finetune_epoch: 22
+      refine_topk: 3
+      selection_threshold: 0.66
+      selection_strategy: target_rate
+      target_selection_rate: 0.65
+      refine_learning_rate: 0.000005
+      sample_weight: 1
+      memory_max_capacity: null
+      w_vc: 0.2
+      w_cc: 0.4
+      w_rr: 0.4
+      early_stop_patience: 3
+      early_stop_delta: 0.0005
+
+  - dataset: Scene-15
+    missing_rate: 0.3
+    seeds: [792, 793, 794, 795, 796]
+    boost:
+      avg_select: 1.0
+      refine_batch_size: 80
+      refine_finetune_epoch: 10
+      refine_topk: 10
+      selection_threshold: 0.74
+      selection_strategy: target_rate
+      target_selection_rate: 1.0
+      refine_learning_rate: 0.00003
+      sample_weight: 0
+      memory_max_capacity: null
+      w_vc: 0.25
+      w_cc: 0.35
+      w_rr: 0.4
+      early_stop_patience: 5
+      early_stop_delta: 0.001
+
+  - dataset: Scene-15
+    missing_rate: 0.5
+    seeds: [353, 354, 355, 356, 357]
+    boost:
+      avg_select: 1.0
+      refine_batch_size: 80
+      refine_finetune_epoch: 20
+      refine_topk: 10
+      selection_threshold: 0.74
+      selection_strategy: target_rate
+      target_selection_rate: 1.0
+      refine_learning_rate: 0.00004
+      sample_weight: 0
+      memory_max_capacity: null
+      w_vc: 0.25
+      w_cc: 0.35
+      w_rr: 0.4
+      early_stop_patience: 6
+      early_stop_delta: 0.001
+
+  - dataset: Scene-15
+    missing_rate: 0.67
+    seeds: [297, 298, 299, 300, 301]
+    boost:
+      avg_select: 1.0
+      refine_batch_size: 80
+      refine_finetune_epoch: 10
+      refine_topk: 10
+      selection_threshold: 0.74
+      selection_strategy: target_rate
+      target_selection_rate: 1.0
+      refine_learning_rate: 0.00003
+      sample_weight: 0
+      memory_max_capacity: null
+      w_vc: 0.25
+      w_cc: 0.35
+      w_rr: 0.4
+      early_stop_patience: 5
+      early_stop_delta: 0.001
+
+  - dataset: LandUse-21
+    missing_rate: 0.3
+    seeds: [106, 107, 108, 109, 110]
+    boost:
+      avg_select: 0.8
+      refine_batch_size: 30
+      refine_finetune_epoch: 20
+      refine_topk: 6
+      selection_threshold: 0.78
+      selection_strategy: target_rate
+      target_selection_rate: 0.8
+      refine_learning_rate: 0.00003
+      sample_weight: 1
+      memory_max_capacity: null
+      w_vc: 0.4
+      w_cc: 0.3
+      w_rr: 0.3
+      early_stop_patience: 3
+      early_stop_delta: 0.001
+
+  - dataset: LandUse-21
+    missing_rate: 0.5
+    seeds: [905, 906, 907, 908, 909]
+    boost:
+      avg_select: 0.9
+      refine_batch_size: 30
+      refine_finetune_epoch: 20
+      refine_topk: 6
+      selection_threshold: 0.78
+      selection_strategy: target_rate
+      target_selection_rate: 0.9
+      refine_learning_rate: 0.00002
+      sample_weight: 1
+      memory_max_capacity: null
+      w_vc: 0.4
+      w_cc: 0.3
+      w_rr: 0.3
+      early_stop_patience: 3
+      early_stop_delta: 0.001
+
+  - dataset: LandUse-21
+    missing_rate: 0.67
+    seeds: [422, 423, 424, 425, 426]
+    boost:
+      avg_select: 0.8
+      refine_batch_size: 30
+      refine_finetune_epoch: 20
+      refine_topk: 6
+      selection_threshold: 0.78
+      selection_strategy: target_rate
+      target_selection_rate: 0.8
+      refine_learning_rate: 0.00002
+      sample_weight: 1
+      memory_max_capacity: null
+      w_vc: 0.4
+      w_cc: 0.3
+      w_rr: 0.3
+      early_stop_patience: 3
+      early_stop_delta: 0.001
